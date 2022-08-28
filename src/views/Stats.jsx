@@ -48,8 +48,9 @@ function Stats(){
                                 return(
                                     <tr className={`bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100`}>
                                     <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                        <div className="ml-3 overflow-hidden">
-                                            <p className="text-sm text-slate-500">{nationality.name}</p>
+                                        <div className="ml-3 overflow-hidden flex items-center">
+                                            <img className="h-10 w-10 rounded-full" src={`https://countryflagsapi.com/png/${nationality.name}`} alt={nationality.name} />
+                                            <p className=" ml-4 text-lg text-slate-500">{nationality.name}</p>
                                         </div>
                                     </td>
                                     <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">

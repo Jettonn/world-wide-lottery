@@ -60,13 +60,19 @@ function CurrentUser({ currentUser, edit, editEmail, updateEmail }){
                         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-2">
                             <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">Phone</h5>
                             <p className="text-gray-700 text-base mb-4">
-                                Phone nr: {currentUser.phone}, Cell: {currentUser.cell}
+                                Phone nr: {currentUser.phone}, Cell nr: {currentUser.cell}
                             </p>
                         </div>
                         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-2">
                             <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">Location</h5>
                             <p className="text-gray-700 text-base mb-4">
                                 City: {currentUser.location.city},  Country: {currentUser.location.country}, Postcode: {currentUser.location.postcode}
+                            </p>
+                        </div>
+                        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm mx-2">
+                            <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">Nationality</h5>
+                            <p className="text-gray-700 text-base mb-4">
+                                {currentUser.nat}
                             </p>
                         </div>
                     </div>
