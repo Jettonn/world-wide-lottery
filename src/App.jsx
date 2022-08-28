@@ -1,8 +1,4 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
-
-//routes
-import routes from './routes'
 
 //redux
 import { store } from './store/index'
